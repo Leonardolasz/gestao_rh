@@ -1,5 +1,5 @@
 """
-WSGI config for restao_rh project.
+WSGI config for gestao_rh project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'restao_rh.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'gestao_rh.settings')
 
 application = get_wsgi_application()
