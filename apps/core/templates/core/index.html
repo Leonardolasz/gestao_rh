@@ -7,9 +7,10 @@
         Column
       </div>
       <div class="col">
-        Olá {{ usuario.funcionario.nome }}
-        <a href="{% url 'list_funcionarios' %}">Gerenciar funcionários</a>
-        <a href="{% url 'list_departamentos' %}">Gerenciar departamentos</a>
+        Olá {{ usuario.funcionario.nome }}<br>
+        <a href="{% url 'list_funcionarios' %}">Gerenciar funcionários</a><br>
+        <a href="{% url 'list_departamentos' %}">Gerenciar departamentos</a><br>
+        <a href="{% url 'list_hora_extra' %}">Gerenciar banco de horas</a><br>
       </div>
       <div class="col">
         <a href="{% url 'logout' %}">Logout</a>

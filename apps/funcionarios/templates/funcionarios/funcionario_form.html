@@ -10,5 +10,17 @@ edit
     {{ form|bootstrap }}
     <button type="submit">Salvar</button>
 </form>
+<br>
+{% if object %}
+<a href="{% url 'create_documento' object.id %}" class="btn btn-success">
+    Adicionar documento
+</a>
+{% endif %}
+{% for documento in object.documentos_set.all %}
+<br>
+    <a href="{{ documento.arquivo.url }}">
+        {{ documento.descricao }}
+    </a> <br>
+{% endfor %}
 
 {% endblock %}
